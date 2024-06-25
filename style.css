@@ -1,0 +1,958 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    width: 100%;
+
+}
+#fixedButton {
+    position: fixed;
+
+    right: -20%;
+    background-image: linear-gradient(to right, #69D6F7, #736CFF,#B470FF);;
+    color: white;
+    border: none;
+
+    font-weight: bolder;
+    font-size: 3vh;
+
+    padding: 3vh 7vh;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+#fixedButton.show {
+    right: 0;
+    top: 40%; /* Show button 20px from the top */
+}
+.section-1{
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+
+}
+.header-main{
+    position: absolute;
+    width: 100%;
+    top: 1%;
+}
+.main-img img{
+       position: relative;
+       height: 130vh;
+       width: 100%;
+       object-fit: cover;
+       background-position: center;
+
+
+    }
+ .Header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 12vh;
+
+    height: 15vh;
+ }
+ .Header span img{
+   position: absolute;
+   left: 16%;
+   top: -12%;
+}
+.Header h1{
+    font-size: 7vh;
+    color: white;
+    position: relative;
+    color: black;
+    right: 5%;
+}
+.Header h1::after{
+    content: "";
+    height: 0.5vh;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    background-color: black;
+    bottom: -5%;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    transform: scaleX(0);
+}
+h1:hover::after{
+    right: 0;
+    transform: scaleX(1);
+}
+.Header button {
+    padding: 3vh 6.5vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #fff;
+    background: #6A6CFF;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s;
+}
+.Header button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: 0;
+    width: 2vh;
+    height: 100%;
+    background: #DFBCFE;
+    transition: all 0.2s;
+    filter: blur(8px);
+}
+.Header button:hover::before {
+   left: 0;
+   z-index: 0;
+   right: 100;
+}
+.Header .icon{
+    font-size: 6vh;
+}
+.sec1-content{
+    position: absolute;
+    top: 16%;
+    left: 5%;
+}
+.sec1-content h1{
+    font-size: 18vh;
+    font-weight: bolder;
+}
+.elementjs {
+    font-size:18vh;
+    margin-top: 1vh;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+    color: rgb(167, 114, 217);
+}
+.sec1-content a{
+    position: relative;
+    padding: 2.8vh 4vh;
+
+    color: black;
+    text-decoration: none;
+    font-size: 3vh;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #6A6CFF;
+}
+.sec1-content a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.5s ease, ;
+    z-index: -1;
+    font-size: 4vh;
+}
+ .sec1-content a:hover::after {
+    position: absolute;
+    left: 0%;
+    border-radius: 20vh;
+    width: 100%;
+    transition: all 0.3s;
+}
+.section2{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    margin-bottom: 5vh;
+}
+.sec2-content1{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 15vh;
+    gap: 3vh;
+    position: relative;
+}
+
+.content{
+    -webkit-box-shadow: 0 0 10px rgb(9, 0, 0);
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 255, 255);
+    height: 65vh;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+.content:hover{
+    margin-bottom: 1.5vh;
+
+ }
+.content h1{
+    font-size: 6vh;
+    padding: 3vh 1vh;
+
+}
+.content p{
+    font-size: 3vh;
+    padding: 3vh 1vh;
+}
+.content-aa{
+    position: relative;
+}
+
+.content-aa a{
+    padding: 1.5vh 4vh;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 3vh;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content-aa a:hover{
+    color:white;
+}
+.content-aa ::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 15%;
+    height: 100%;
+    background-color: #BD71FF;
+    border-radius: 50%;
+    transition: left 0.5s ease, ;
+    z-index: -1;
+    font-size: 4vh;
+}
+.content-aa a:hover::after {
+    position: absolute;
+    left: 0%;
+    border-radius: 20vh;
+    width: 100%;
+    transition: all 0.3s;
+}
+.section2-content2{
+    width: 95%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.content2{
+    width: 25%;
+    min-height: 60vh;
+    margin-top: 10vh;
+}
+.content2 h1{
+    text-align: center;
+    font-size: 12vh;
+    color: #906EFF;
+}
+.content2 h4{
+    text-align: center;
+    font-size: 3vh;
+    color: black;
+    font-weight: 200;
+    padding-bottom: 4vh;
+}
+.content2 P{
+    line-height: 4vh;
+    font-size: 3vh;
+    color: gray;
+    text-align: center;
+    letter-spacing: 0.2vh;
+}
+.content2-3{
+    width: 50%;
+    height: 70vh;
+}
+.content2-3 h4{
+    text-align: center;
+    font-size: 3.5vh;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 0.5vh;
+}
+.content2-3 P{
+    padding-top: 2vh;
+    font-size: 2.5vh;
+    color: gray;
+    text-align: center;
+}
+.content2-3 h2 {
+    text-align: center;
+    font-size: 44vh;
+    color: #3EA8F4;
+
+}
+.content2-3 h2 span{
+    text-align: center;
+    font-size: 44vh;
+    color: #906EFF;
+
+}
+.section2-img{
+   position: relative;
+    background-color:#FFFFFF;
+    -webkit-box-shadow: 0 0 10px rgb(9, 0, 0);
+    box-shadow: 0 0 10px black;
+    width: 22vh;
+    height: 20vh;
+    border-radius: 50%;
+    left: 45%;
+    z-index: 9999;
+}
+.section2-img img{
+   position: relative;
+    width: 12vh;
+    height: 12vh;
+    left: 20%;
+    top: 20%;
+}
+.projects h1{
+    padding: 10vh 0vh;
+    text-align: center;
+    font-size: 18vh;
+    color: #A670FF;
+    font-weight: bolder;
+}
+.projects h1 span{
+    color: black;
+}
+.move-image{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.move-image img {
+    width: 100vh;
+    height: 80vh;
+}
+
+.move-image::-webkit-scrollbar {
+    display: none;
+}
+.image-data h1{
+    text-align: center;
+    font-size: 6vh;
+    font-weight: bolder;
+    position: relative;
+}
+.image-data p{
+    text-align: center;
+    font-size: 3.5vh;
+    color: gray;
+}
+.image-data h1::after{
+    content: "";
+    height: 1vh;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    background-color: black;
+    top: 50%;
+
+    transition: 0.5s;
+    transition-timing-function: linear;
+    transform: scaleX(0);
+}
+.image-data h1:hover::after{
+    right: 0;
+    transform: scaleX(1);
+}
+.image-data:hover{
+    padding-bottom: 1vh;
+}
+.section3{
+    width: 100%;
+    min-height:80vh ;
+    position: relative;
+}
+.content-3{
+    padding: 10vh 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    gap: 3vh;
+}
+.content3-cont{
+    -webkit-box-shadow: 0 0 10px rgb(9, 0, 0);
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 255, 255);
+    padding: 7vh 10vh;
+    width: 100%;
+}
+.content3-cont h1{
+    font-size: 8vh;
+}
+.content3-cont h2{
+    font-size: 9vh;
+    color: #A670FF;
+}
+.content3-cont i{
+    font-size: 9vh;
+    padding: 3vh 0vh;
+    transition: 0.3s;
+}
+.content3-cont i:hover{
+    font-size: 11vh;
+}
+
+.content3-cont h3{
+    font-size: 3vh;
+    padding: 3vh 0vh;
+}
+.content3-cont p{
+    font-size: 3vh;
+    color: gray;
+    padding: 3vh 0vh
+}
+.section3 h1{
+    text-align: center;
+    font-size: 8vh;
+    color: gray;
+}
+
+.moving-div{
+
+    margin-top: 5vh;
+    position: relative;
+    bottom: 3%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 100%;
+}
+.move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.move:hover{
+    opacity: 1;
+}
+.move img{
+    height: 40vh;
+    width: 35vh;
+    margin: 0vh 1vh;
+
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+
+}
+.move:hover{
+    opacity: 1;
+}
+
+@keyframes mobe {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+.left-move{
+    height: 100%;
+    width: 20%;
+   background: linear-gradient(to right, #111,trasnparent);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+
+}
+.right-move{
+    height: 100%;
+    width: 20%;
+   background: linear-gradient(to right, trasnparent, #111111);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+}
+.content img{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 10vh;
+}
+.content-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+.content-4 h1{
+    color: #BD71FF;
+    font-size: 14vh;
+    padding-left: 15vh;
+}
+.content-4 h1 span{
+    color: black;
+}
+.content-4 h2{
+    font-size: 6vh;
+
+}
+.content-4 p{
+    font-size: 3vh;
+    padding-right:15vh;
+}
+.content-4 p span{
+    font-size: 2.5vh;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.content-4 p span:hover{
+    color: gray;
+}
+.content5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    min-height: 40vh;
+    padding-top: 20vh;
+}
+.cont5-content{
+    padding: 2vh 5vh;
+}
+.cont5-content h1{
+    font-size: 15vh;
+    text-align: right;
+    padding-bottom: 4vh;
+}
+.cont5-content p{
+    font-size: 3.5vh;
+    font-weight: bold;
+    text-align: right;
+    line-height: 6vh;
+}
+.cont5-content h2{
+    padding-top: 3vh;
+    font-size: 3vh;
+    text-align: right;
+    color: gray;
+    font-weight: 200;
+}
+
+.cont5-content2{
+    padding: 2vh 5vh;
+
+}
+.cont5-content2 h1{
+    font-size: 15vh;
+    text-align: left;
+    padding-bottom: 4vh;
+}
+.cont5-content2 p{
+    font-size: 3.5vh;
+    font-weight: bold;
+    text-align:left;
+    line-height: 6vh;
+}
+.cont5-content2 h2{
+    padding-top: 3vh;
+    font-size: 3vh;
+    text-align: left;
+    color: gray;
+    font-weight: 200;
+}
+.section4{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+
+
+}
+.sec4-cont1{
+
+    width: 100%;
+    min-height: 30vh;
+    background-color: #EFEFEF;
+    text-align: center;
+    padding: 25vh 0vh;
+}
+.sec4-cont1 p{
+    font-size: 2.5vh;
+    color: #906EFF;
+    padding: 3vh 0vh;
+    letter-spacing: 0.5vh;
+    font-weight: 600;
+}
+.sec4-cont1 h1{
+    font-size: 9vh;
+    padding: 3vh 0vh;
+    font-weight: 900;
+}
+.sec4-cont1 button{
+    margin-top: 2vh;
+    font-size: 3vh;
+    padding: 3vh 6vh;
+    border: none;
+    background-color: #906EFF;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 1vh;
+    font-weight: 700;
+}
+
+.sec4-cont1 button:hover{
+    margin-top: 0.5vh;
+}
+.sec4-cont2{
+    width: 100%;
+    min-height: 30vh;
+    background-color: white;
+}
+.sec4-cont2 p{
+    margin-top: 30vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 500;
+    color: #906EFF;
+    letter-spacing: 0.2vh;
+}
+.sec4-cont2 h1{
+    text-align: center;
+    font-size: 9vh;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.5vh;
+}
+.bxslider{
+
+
+}
+.bxslider li{
+
+}
+.bxslider li img{
+    width: 30%;
+    height: 30vh;
+    margin: auto;
+}
+.sec4-cont4 h1{
+    padding: 1vh 0vh;
+    color: black;
+    font-size: 6vh;
+    text-align: center;
+font-weight: 500;
+}
+
+.sec4-cont4  p{
+    padding: 4vh 0vh;
+    color: #906EFF;
+    font-size: 3vh;
+    text-align: center;
+}
+.sec4-cont5{
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec4-cont5-2 img{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 10vh;
+}
+.sec4-cont5-1{
+    min-height: 80vh;
+    margin: 0vh 10vh;
+
+}
+.sec4-cont5-1 i{
+    font-size: 8vh;
+    margin-left: 60%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+.sec4-cont5-1 h1{
+    font-size: 3vh;
+    font-weight: 700;
+    color: #BD71FF;
+    margin-bottom: 3vh;
+}
+.sec4-cont5-1  p{
+    letter-spacing: 0.1vh;
+    font-size: 3vh;
+    color: gray;
+}
+.sec4-cont5-3{
+    min-height: 80vh;
+    margin: 0vh 10vh;
+
+}
+.sec4-cont5-3 i{
+    font-size: 8vh;
+    margin-left: 60%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+.sec4-cont5-3 h1{
+    font-size: 3vh;
+    font-weight: 700;
+    color: #BD71FF;
+    margin-bottom: 3vh;
+}
+.sec4-cont5-3  p{
+    letter-spacing: 0.1vh;
+    font-size: 3vh;
+    color: gray;
+}
+.section5{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+
+}
+.sec5-con1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+.sec5-con1 h1{
+    width: 20%;
+    font-size: 38vh;
+    font-weight: bolder;
+    color: #906EFF;
+    padding: 20vh 10vh ;
+
+
+
+}
+.sec5-con1  p{
+    width: 80%;
+    font-size:8vh;
+    z-index: 9999;
+    padding: 20vh 20vh ;
+
+
+
+
+}
+.sec5-con1 img{
+    position: absolute;
+    right: 0;
+    top:10%;
+    padding: 5vh 0vh;
+}
+.sec5-con2{
+
+    width: 90%;
+    height: 30vh;
+    background-color: #F3F3F3;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 20vh;
+    position: relative;
+}
+
+.sec5-con2 h1{
+    font-size: 6vh;
+    font-weight: 700;
+
+
+}
+.sec5-con2 i{
+width: 55vh;
+font-size: 8vh;
+color: #BD71FF;
+position: relative;
+margin-right: 0vh;
+
+
+
+
+
+
+}
+.sec5-con2 i span{
+    width: 35vh;
+    position: absolute;
+    top: 40%;
+    right:20%;
+    font-size: 3vh;
+    color: black;
+    text-decoration: underline;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.sec5-con2 i span:hover{
+    color: #6A6CFF;
+
+}
+.sec5-con3{
+
+
+
+    text-align: center;
+}
+.sec5-con3 p{
+    padding-top: 20vh;
+    font-weight: 100;
+    font-size: 8vh;
+    color: gray;
+}
+.sec5-con3 h4{
+    padding-top: 4vh;
+    color: #A670FF;
+    font-weight: bold;
+    font-size: 7vh;
+}
+.footer{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15vh 10vh;
+
+}
+.foot-cont1{}
+.foot-cont1 h5{
+position: relative;
+font-size: 6vh;
+font-weight: 100;
+}
+.foot-cont1 img{
+    position: absolute;
+    width: 4vh;
+    top: 28%;
+    left: 6.7%;
+}
+.foot-cont1 p{
+    color: gray;
+    padding: 2vh 0vh;
+
+}
+.foot-cont1 p span{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.foot-cont1 span{
+    font-size: 2.5vh;
+    color: gray;
+}
+.foot-cont2{
+}
+.foot-cont2 p{
+    font-size: 3vh;
+    letter-spacing: 0.1vh;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+.foot-cont2  input{
+    width: 70vh;
+    padding: 2vh 4vh;
+    border: 1px solid rgb(196, 188, 188);
+    outline: none;
+    position: relative;
+
+}
+.foot-cont2 span i{
+    font-size: 3.5vh;
+    position: absolute;
+    left: 65%;
+    top: 52%;
+}
+.foot-cont3{}
+.foot-cont3 p{
+    font-size: 3vh;
+    color: gray;
+    padding-bottom: 3vh;
+}
+.foot-cont3  i{
+  padding: 0vh 1vh;
+    font-size: 4vh;
+}
+.hamburger {
+   
+    top: 2vh;
+    right: 1vh;
+    color: black;
+    font-size: 15vh;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu-bar {
+    position: fixed;
+    top: 0;
+    right: -50%; 
+    width: 50vh;
+    height: 100%;
+   background-color: #EFEFEF;
+    color: white;
+    padding: 10vh 3vh;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+.menu-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-bar ul li {
+    margin: 2vh 0;
+    color: black;
+    font-size: 7vh
+}
+.menu-bar.show {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
